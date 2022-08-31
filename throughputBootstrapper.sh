@@ -1,0 +1,1 @@
+java -jar build/libs/RatisBenchmark-1.0-SNAPSHOT.jar --addresses $1";"$2";"$3 --role bootstrapper --benchmark throughput --messageBufferSize 10MB --clientCount 2 --threadCount 10 --messageSize 10000000 --rounds 5

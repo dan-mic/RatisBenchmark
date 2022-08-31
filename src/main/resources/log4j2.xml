@@ -1,0 +1,33 @@
+<Configuration status="warn">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%highlight{[%d{HH:mm:ss.SSS}][%t{4}][%level{WARN=WRN, DEBUG=DBG, ERROR=ERR, TRACE=TRC, INFO=INF, FATAL=FAT}][%c{1}] %msg%n}{FATAL=red, ERROR=red, WARN=yellow, INFO=blue, DEBUG=green, TRACE=white}"/>
+        </Console>
+
+        <File name="HadroNio_File" fileName="/tmp/ratis/HadroNio_log.log">
+            <PatternLayout pattern="%d{yyyy-mm-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+
+        <File name="Ratis_File" fileName="/tmp/ratis/Ratis_log.log">
+            <PatternLayout pattern="%d{yyyy-mm-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+
+        <Async name="ConsoleAsync" bufferSize="500">
+            <AppenderRef ref="Console"/>
+        </Async>
+    </Appenders>
+
+    <Loggers>
+        <Root level="error">
+            <AppenderRef ref="ConsoleAsync"/>
+        </Root>
+
+        <Logger name="de.hhu.bsinfo" level="info" additivity="false">
+            <AppenderRef ref="ConsoleAsync" />
+        </Logger>
+
+        <Logger name="org.apache.ratis" level="info" additivity="false">
+            <AppenderRef ref="ConsoleAsync" />
+        </Logger>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.hhu.bsinfo.ratisbenchmark.benchmark.throughput.ThroughputClientTest" tests="2" skipped="2" failures="0" errors="0" timestamp="2022-08-31T19:47:35" hostname="PC" time="0.0">
+  <properties/>
+  <testcase name="testSend()" classname="de.hhu.bsinfo.ratisbenchmark.benchmark.throughput.ThroughputClientTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSendReadOnly()" classname="de.hhu.bsinfo.ratisbenchmark.benchmark.throughput.ThroughputClientTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

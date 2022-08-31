@@ -1,0 +1,6 @@
+de/hhu/bsinfo/ratisbenchmark/benchmark/TestRaftGroup.java
+ de.hhu.bsinfo.ratisbenchmark.benchmark.TestRaftGroup
+de/hhu/bsinfo/ratisbenchmark/benchmark/latency/LatencyClientTest.java
+ de.hhu.bsinfo.ratisbenchmark.benchmark.latency.LatencyClientTest
+de/hhu/bsinfo/ratisbenchmark/benchmark/throughput/ThroughputClientTest.java
+ de.hhu.bsinfo.ratisbenchmark.benchmark.throughput.ThroughputClientTest
